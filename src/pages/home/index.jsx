@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
-const Home = () => {
+import { Button } from '../../components/Button'
+import { Header } from '../../components/Header'
+
+
+export function Home() {
     return (<>
-        <h1>Home</h1>
-        <Link to='/login'>
-            Fazer login
-        </Link>
+        <Header></Header>
     </>
     )
 }
-export { Home }
+
