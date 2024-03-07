@@ -10,7 +10,7 @@ import { Card } from '../../components/Card'
 
 export function Feed() {
     return (<>
-        <Header />
+        <Header autenticado={true} />
         <Container>
             <Column flex={2}>
                 <Card />
