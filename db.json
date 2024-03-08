@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Clayton Eduard",
+            "email": "clayton@gmail.com",
+            "senha": "123456"
+        },
+        {
+            "id": 2,
+            "name": "Nathalia Prateado",
+            "email": "nathalia@gmail.com",
+            "senha": "123456"
+        }
+    ]
+}

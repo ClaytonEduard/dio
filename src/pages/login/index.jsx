@@ -8,6 +8,8 @@ import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
 
+import { api } from '../../services/api'
+
 import {
     Column,
     Container,
@@ -33,18 +35,25 @@ export function Login() {
     const navigate = useNavigate();
 
 
-    const { control, handleSubmit, formState: { errors, isValid } } = useForm({
+    const { control, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
         mode: 'onChange',
 
     });
 
-    console.log(isValid, errors);
-    const onSubmit = data => console.log(data);
-
-    const handleClickSignIn = () => {
-        navigate('/feed')
-    }
+    console.log(errors);
+    const onSubmit = async formData => {
+        try {
+            const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`);
+            if (data.length === 1) {
+                navigate('/feed')
+            } else {
+                alert('Email ou senha inválidos')
+            }
+        } catch {
+            alert('Houve um erro, tente novamente');
+        }
+    };
 
 
     return (
