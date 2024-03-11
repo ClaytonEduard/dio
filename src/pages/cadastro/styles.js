@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.main`
     width: 100%;
     max-width: 80%;
@@ -13,7 +12,6 @@ export const Container = styled.main`
     align-items: center;
 
 `
-
 export const Wrapper = styled.div`
     max-width: 300px;
 `
@@ -33,25 +31,24 @@ export const Title = styled.h2`
     font-style: normal;
     font-size: 32px;
     font-weight: 700;
-    width: 320px;
+    width: 380px;
     margin-bottom: 20px;
     line-height: 44px;
-
     color: white;
-
 `
-export const TitleLogin = styled.p`
+
+export const TitleCadastro = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-size: 32px;
     font-weight: 700;
-    width: 320px;
+    width: 350px;
     margin-bottom: 20px;
     line-height: 44px;
 
 `
 
-export const SubtitleLogin = styled.p`
+export const SubtitleCadastro = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-size: 18px;
@@ -61,24 +58,35 @@ export const SubtitleLogin = styled.p`
 
 `
 
-export const EsqueciText = styled.p`
+export const Info = styled.p`
+    min-width: 340px;
     font-family: 'Open Sans';
     font-style: normal;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 19px;
-    color: #E5E044;
+    color: white;
 
 `
 
-
-export const CriarText = styled.a`
+export const JaTemConta = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-size: 14px;
     font-weight: 700;
     line-height: 19px;
-    color: #E23DD7;
+    color: white;
+`
+
+export const FazerLogin = styled.a`
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #23DD7A;
+
     cursor: pointer;
     text-decoration: none;
+
 `

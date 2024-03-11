@@ -76,7 +76,7 @@ export function Login() {
                         </form>
                         <Row>
                             <EsqueciText>Esqueci minha senha</EsqueciText>
-                            <CriarText>Criar Conta</CriarText>
+                            <CriarText href="/cadastro" >Criar Conta</CriarText>
                         </Row>
                     </Wrapper>
                 </Column>
